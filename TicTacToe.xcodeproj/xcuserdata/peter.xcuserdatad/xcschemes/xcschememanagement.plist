@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Notification - TicTacToe WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>TicTacToe WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>TicTacToe.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D0E9BBEA1B7BD69000A96DA3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0E9BBFE1B7BD69100A96DA3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0E9BC091B7BD69100A96DA3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0E9BC121B7BD69100A96DA3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
