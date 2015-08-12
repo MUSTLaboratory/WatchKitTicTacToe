@@ -1,39 +1,161 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8089"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Welcome Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="WelcomeInterfaceController" customModule="TicTacToe_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Welcome to TicTacToe" textAlignment="center" numberOfLines="2" id="3f5-CZ-StV"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Play!" id="kVh-CD-kui">
+                            <connections>
+                                <segue destination="B35-ov-Xdr" kind="push" id="87x-A8-aPX"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
+        <!--AI level-->
+        <scene sceneID="ZvS-3I-aeW">
             <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller title="AI level" id="B35-ov-Xdr" customClass="LevelSelectionInterfaceController" customModule="TicTacToe_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <picker width="1" height="100" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="gHA-Qc-265">
+                            <connections>
+                                <action selector="levelPickerSelectionChanged:" destination="B35-ov-Xdr" id="GNq-HG-fqs"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Next" id="YO4-i5-FQI">
+                            <connections>
+                                <segue destination="392-vr-FF1" kind="push" id="Ou7-VX-2hI"/>
+                            </connections>
+                        </button>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <outlet property="levelPicker" destination="gHA-Qc-265" id="x0R-Tw-0E6"/>
                     </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="426" y="345"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <!--Player-->
+        <scene sceneID="Vfg-xI-0Nc">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller title="Player" hidesWhenLoading="NO" id="392-vr-FF1" customClass="PlayerSelectionInterfaceController" customModule="TicTacToe_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" id="8bK-De-bxU"/>
+                        <label alignment="center" text="What will you choose?" textAlignment="center" numberOfLines="2" id="4vk-TQ-LNL"/>
+                        <button width="1" height="44" alignment="left" title="X" id="DUu-rq-TjE">
+                            <connections>
+                                <action selector="chooseXPressed" destination="392-vr-FF1" id="GeI-Kb-e3R"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="44" alignment="left" title="O" id="9iY-hR-YQJ">
+                            <connections>
+                                <action selector="chooseOPressed" destination="392-vr-FF1" id="LkJ-F9-5vN"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <segue destination="g2G-76-xpE" kind="relationship" relationship="nextPage" id="B6j-Oq-Adu"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="603" y="343"/>
+        </scene>
+        <!--Game-->
+        <scene sceneID="BXM-8b-aNV">
+            <objects>
+                <controller identifier="game" title="Game" id="g2G-76-xpE" customClass="GameInterfaceController" customModule="TicTacToe_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="center" id="mEG-HU-AS6">
+                            <items>
+                                <button width="42" alignment="left" id="V2O-Qc-hlc">
+                                    <fontDescription key="font" type="system" pointSize="28"/>
+                                    <connections>
+                                        <action selector="b11Pressed" destination="g2G-76-xpE" id="onk-fB-wYY"/>
+                                    </connections>
+                                </button>
+                                <button width="42" alignment="left" id="vDh-h6-yNw">
+                                    <fontDescription key="font" type="system" pointSize="28"/>
+                                    <connections>
+                                        <action selector="b12Pressed" destination="g2G-76-xpE" id="VhO-Pr-Bn2"/>
+                                    </connections>
+                                </button>
+                                <button width="42" alignment="left" id="rwj-Zu-ghc">
+                                    <fontDescription key="font" type="system" pointSize="28"/>
+                                    <connections>
+                                        <action selector="b13Pressed" destination="g2G-76-xpE" id="cVN-Hp-hi0"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" id="UkN-rr-LJx">
+                            <items>
+                                <button width="42" alignment="left" id="pF3-Ot-P0l">
+                                    <fontDescription key="font" type="system" pointSize="28"/>
+                                    <connections>
+                                        <action selector="b21Pressed" destination="g2G-76-xpE" id="2kg-vh-B2M"/>
+                                    </connections>
+                                </button>
+                                <button width="42" alignment="left" id="6sI-0P-qDh">
+                                    <fontDescription key="font" type="system" pointSize="28"/>
+                                    <connections>
+                                        <action selector="b22Pressed" destination="g2G-76-xpE" id="pbz-Wk-LZX"/>
+                                    </connections>
+                                </button>
+                                <button width="42" alignment="left" id="4QD-jq-ViZ">
+                                    <fontDescription key="font" type="system" pointSize="28"/>
+                                    <connections>
+                                        <action selector="b23Pressed" destination="g2G-76-xpE" id="e0r-X3-Z4g"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" id="FUS-Vh-wOP">
+                            <items>
+                                <button width="42" alignment="left" id="4Z9-Ix-qNN">
+                                    <fontDescription key="font" type="system" pointSize="28"/>
+                                    <connections>
+                                        <action selector="b31Pressed" destination="g2G-76-xpE" id="qwb-aE-0yv"/>
+                                    </connections>
+                                </button>
+                                <button width="42" alignment="left" id="dqp-yZ-J0m">
+                                    <fontDescription key="font" type="system" pointSize="28"/>
+                                    <connections>
+                                        <action selector="b32Pressed" destination="g2G-76-xpE" id="Wdy-K7-DEs"/>
+                                    </connections>
+                                </button>
+                                <button width="42" alignment="left" id="knz-vb-x90">
+                                    <fontDescription key="font" type="system" pointSize="28"/>
+                                    <connections>
+                                        <action selector="b33Pressed" destination="g2G-76-xpE" id="CQx-XX-AiT"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Your turn!" textAlignment="center" id="cNZ-c8-pHw"/>
+                    </items>
+                    <connections>
+                        <outlet property="b11" destination="V2O-Qc-hlc" id="uev-PI-Ipz"/>
+                        <outlet property="b12" destination="vDh-h6-yNw" id="SvU-Lo-Eql"/>
+                        <outlet property="b13" destination="rwj-Zu-ghc" id="Iiq-sW-d6X"/>
+                        <outlet property="b21" destination="pF3-Ot-P0l" id="5qj-yZ-FF7"/>
+                        <outlet property="b22" destination="6sI-0P-qDh" id="bMv-hl-Cg3"/>
+                        <outlet property="b23" destination="4QD-jq-ViZ" id="9ST-p1-6p6"/>
+                        <outlet property="b31" destination="4Z9-Ix-qNN" id="kwU-os-0bh"/>
+                        <outlet property="b32" destination="dqp-yZ-J0m" id="Zem-ll-5mR"/>
+                        <outlet property="b33" destination="knz-vb-x90" id="kuV-6I-qhO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="786" y="345"/>
         </scene>
     </scenes>
 </document>

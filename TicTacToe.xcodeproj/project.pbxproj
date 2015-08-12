@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D08E55C41B7C10CE00A18301 /* PlayerSelectionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08E55C31B7C10CE00A18301 /* PlayerSelectionInterfaceController.swift */; };
 		D0E9BBEF1B7BD69000A96DA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9BBEE1B7BD69000A96DA3 /* AppDelegate.swift */; };
 		D0E9BBF11B7BD69000A96DA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9BBF01B7BD69000A96DA3 /* ViewController.swift */; };
 		D0E9BBF41B7BD69000A96DA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E9BBF21B7BD69000A96DA3 /* Main.storyboard */; };
@@ -18,10 +19,15 @@
 		D0E9BC1A1B7BD69100A96DA3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E9BC181B7BD69100A96DA3 /* Interface.storyboard */; };
 		D0E9BC1C1B7BD69100A96DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E9BC1B1B7BD69100A96DA3 /* Assets.xcassets */; };
 		D0E9BC231B7BD69100A96DA3 /* TicTacToe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0E9BC221B7BD69100A96DA3 /* TicTacToe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D0E9BC2A1B7BD69100A96DA3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9BC291B7BD69100A96DA3 /* InterfaceController.swift */; };
+		D0E9BC2A1B7BD69100A96DA3 /* WelcomeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9BC291B7BD69100A96DA3 /* WelcomeInterfaceController.swift */; };
 		D0E9BC2C1B7BD69100A96DA3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9BC2B1B7BD69100A96DA3 /* ExtensionDelegate.swift */; };
 		D0E9BC2E1B7BD69100A96DA3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9BC2D1B7BD69100A96DA3 /* NotificationController.swift */; };
 		D0E9BC301B7BD69100A96DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E9BC2F1B7BD69100A96DA3 /* Assets.xcassets */; };
+		D0E9BC461B7BDAE600A96DA3 /* LevelSelectionInferfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9BC451B7BDAE600A96DA3 /* LevelSelectionInferfaceController.swift */; };
+		D0E9BC4A1B7BDB5100A96DA3 /* GameInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9BC491B7BDB5100A96DA3 /* GameInterfaceController.swift */; };
+		D0E9BC511B7BE72100A96DA3 /* GameContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9BC501B7BE72100A96DA3 /* GameContext.swift */; };
+		D0E9BC531B7BF46300A96DA3 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9BC521B7BF46300A96DA3 /* Point.swift */; };
+		D0E9BC551B7BF60000A96DA3 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9BC541B7BF60000A96DA3 /* Board.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +87,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D08E55C31B7C10CE00A18301 /* PlayerSelectionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSelectionInterfaceController.swift; sourceTree = "<group>"; };
 		D0E9BBEB1B7BD69000A96DA3 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E9BBEE1B7BD69000A96DA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0E9BBF01B7BD69000A96DA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,11 +107,16 @@
 		D0E9BC1D1B7BD69100A96DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0E9BC221B7BD69100A96DA3 /* TicTacToe WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TicTacToe WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E9BC281B7BD69100A96DA3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		D0E9BC291B7BD69100A96DA3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D0E9BC291B7BD69100A96DA3 /* WelcomeInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeInterfaceController.swift; sourceTree = "<group>"; };
 		D0E9BC2B1B7BD69100A96DA3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		D0E9BC2D1B7BD69100A96DA3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		D0E9BC2F1B7BD69100A96DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0E9BC311B7BD69100A96DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0E9BC451B7BDAE600A96DA3 /* LevelSelectionInferfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelectionInferfaceController.swift; sourceTree = "<group>"; };
+		D0E9BC491B7BDB5100A96DA3 /* GameInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInterfaceController.swift; sourceTree = "<group>"; };
+		D0E9BC501B7BE72100A96DA3 /* GameContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameContext.swift; path = Model/GameContext.swift; sourceTree = "<group>"; };
+		D0E9BC521B7BF46300A96DA3 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Model/Point.swift; sourceTree = "<group>"; };
+		D0E9BC541B7BF60000A96DA3 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Board.swift; path = Model/Board.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +219,11 @@
 		D0E9BC261B7BD69100A96DA3 /* TicTacToe WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				D0E9BC291B7BD69100A96DA3 /* InterfaceController.swift */,
+				D0E9BC4F1B7BE70B00A96DA3 /* Model */,
+				D0E9BC291B7BD69100A96DA3 /* WelcomeInterfaceController.swift */,
+				D0E9BC451B7BDAE600A96DA3 /* LevelSelectionInferfaceController.swift */,
+				D0E9BC491B7BDB5100A96DA3 /* GameInterfaceController.swift */,
+				D08E55C31B7C10CE00A18301 /* PlayerSelectionInterfaceController.swift */,
 				D0E9BC2B1B7BD69100A96DA3 /* ExtensionDelegate.swift */,
 				D0E9BC2D1B7BD69100A96DA3 /* NotificationController.swift */,
 				D0E9BC2F1B7BD69100A96DA3 /* Assets.xcassets */,
@@ -223,6 +239,16 @@
 				D0E9BC281B7BD69100A96DA3 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0E9BC4F1B7BE70B00A96DA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0E9BC501B7BE72100A96DA3 /* GameContext.swift */,
+				D0E9BC521B7BF46300A96DA3 /* Point.swift */,
+				D0E9BC541B7BF60000A96DA3 /* Board.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,7 +469,13 @@
 			files = (
 				D0E9BC2E1B7BD69100A96DA3 /* NotificationController.swift in Sources */,
 				D0E9BC2C1B7BD69100A96DA3 /* ExtensionDelegate.swift in Sources */,
-				D0E9BC2A1B7BD69100A96DA3 /* InterfaceController.swift in Sources */,
+				D08E55C41B7C10CE00A18301 /* PlayerSelectionInterfaceController.swift in Sources */,
+				D0E9BC551B7BF60000A96DA3 /* Board.swift in Sources */,
+				D0E9BC511B7BE72100A96DA3 /* GameContext.swift in Sources */,
+				D0E9BC2A1B7BD69100A96DA3 /* WelcomeInterfaceController.swift in Sources */,
+				D0E9BC531B7BF46300A96DA3 /* Point.swift in Sources */,
+				D0E9BC461B7BDAE600A96DA3 /* LevelSelectionInferfaceController.swift in Sources */,
+				D0E9BC4A1B7BDB5100A96DA3 /* GameInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,6 +764,7 @@
 				D0E9BC361B7BD69100A96DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0E9BC381B7BD69100A96DA3 /* Build configuration list for PBXNativeTarget "TicTacToe WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -740,6 +773,7 @@
 				D0E9BC3A1B7BD69100A96DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0E9BC3C1B7BD69100A96DA3 /* Build configuration list for PBXNativeTarget "TicTacToe" */ = {
 			isa = XCConfigurationList;
@@ -748,6 +782,7 @@
 				D0E9BC3E1B7BD69100A96DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0E9BC3F1B7BD69100A96DA3 /* Build configuration list for PBXNativeTarget "TicTacToeTests" */ = {
 			isa = XCConfigurationList;
@@ -756,6 +791,7 @@
 				D0E9BC411B7BD69100A96DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0E9BC421B7BD69100A96DA3 /* Build configuration list for PBXNativeTarget "TicTacToeUITests" */ = {
 			isa = XCConfigurationList;
@@ -764,6 +800,7 @@
 				D0E9BC441B7BD69100A96DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
