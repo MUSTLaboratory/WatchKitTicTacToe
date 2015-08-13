@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D08E55C41B7C10CE00A18301 /* PlayerSelectionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08E55C31B7C10CE00A18301 /* PlayerSelectionInterfaceController.swift */; };
+		D0AAB5791B7C78B300BDE67E /* BackgroundSelectionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB5781B7C78B300BDE67E /* BackgroundSelectionInterfaceController.swift */; };
 		D0E9BBEF1B7BD69000A96DA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9BBEE1B7BD69000A96DA3 /* AppDelegate.swift */; };
 		D0E9BBF11B7BD69000A96DA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9BBF01B7BD69000A96DA3 /* ViewController.swift */; };
 		D0E9BBF41B7BD69000A96DA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E9BBF21B7BD69000A96DA3 /* Main.storyboard */; };
@@ -88,6 +89,7 @@
 
 /* Begin PBXFileReference section */
 		D08E55C31B7C10CE00A18301 /* PlayerSelectionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSelectionInterfaceController.swift; sourceTree = "<group>"; };
+		D0AAB5781B7C78B300BDE67E /* BackgroundSelectionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundSelectionInterfaceController.swift; sourceTree = "<group>"; };
 		D0E9BBEB1B7BD69000A96DA3 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E9BBEE1B7BD69000A96DA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0E9BBF01B7BD69000A96DA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -222,8 +224,9 @@
 				D0E9BC4F1B7BE70B00A96DA3 /* Model */,
 				D0E9BC291B7BD69100A96DA3 /* WelcomeInterfaceController.swift */,
 				D0E9BC451B7BDAE600A96DA3 /* LevelSelectionInferfaceController.swift */,
-				D0E9BC491B7BDB5100A96DA3 /* GameInterfaceController.swift */,
+				D0AAB5781B7C78B300BDE67E /* BackgroundSelectionInterfaceController.swift */,
 				D08E55C31B7C10CE00A18301 /* PlayerSelectionInterfaceController.swift */,
+				D0E9BC491B7BDB5100A96DA3 /* GameInterfaceController.swift */,
 				D0E9BC2B1B7BD69100A96DA3 /* ExtensionDelegate.swift */,
 				D0E9BC2D1B7BD69100A96DA3 /* NotificationController.swift */,
 				D0E9BC2F1B7BD69100A96DA3 /* Assets.xcassets */,
@@ -467,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AAB5791B7C78B300BDE67E /* BackgroundSelectionInterfaceController.swift in Sources */,
 				D0E9BC2E1B7BD69100A96DA3 /* NotificationController.swift in Sources */,
 				D0E9BC2C1B7BD69100A96DA3 /* ExtensionDelegate.swift in Sources */,
 				D08E55C41B7C10CE00A18301 /* PlayerSelectionInterfaceController.swift in Sources */,

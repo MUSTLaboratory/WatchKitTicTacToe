@@ -30,6 +30,7 @@ class GameContext {
     var level: Level = .Easy;
     var gridSize = 3;
     var result: Result = .Undefined;
+    var backgroundImage: WKImage?;
     var player: Player = .X;
     var currentTurn: Player = .X;
     var turnsCount = 0;

@@ -33,7 +33,7 @@
                         </picker>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Next" id="YO4-i5-FQI">
                             <connections>
-                                <segue destination="392-vr-FF1" kind="push" id="Ou7-VX-2hI"/>
+                                <segue destination="UnO-fu-A0P" kind="push" id="duy-gL-2vB"/>
                             </connections>
                         </button>
                     </items>
@@ -42,7 +42,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="426" y="345"/>
+            <point key="canvasLocation" x="419" y="345"/>
         </scene>
         <!--Player-->
         <scene sceneID="Vfg-xI-0Nc">
@@ -67,12 +67,35 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="603" y="343"/>
+            <point key="canvasLocation" x="794" y="346"/>
+        </scene>
+        <!--Background-->
+        <scene sceneID="tcJ-5X-HzI">
+            <objects>
+                <controller title="Background" hidesWhenLoading="NO" id="UnO-fu-A0P" customClass="BackgroundSelectionInterfaceController" customModule="TicTacToe_WatchKit_Extension">
+                    <items>
+                        <picker width="1" height="100" alignment="left" style="stack" focusStyle="sequence" indicatorMode="shownWhileFocused" id="kbL-jW-5UB">
+                            <connections>
+                                <action selector="backgroundPickerSelectionChanged:" destination="UnO-fu-A0P" id="a4j-WN-81l"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Next" id="ud5-yF-IZ3">
+                            <connections>
+                                <segue destination="392-vr-FF1" kind="push" id="G9W-Ly-uSg"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="backgroundPicker" destination="kbL-jW-5UB" id="fPA-0p-5l6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="604" y="345"/>
         </scene>
         <!--Game-->
         <scene sceneID="BXM-8b-aNV">
             <objects>
-                <controller identifier="game" title="Game" id="g2G-76-xpE" customClass="GameInterfaceController" customModule="TicTacToe_WatchKit_Extension">
+                <controller identifier="game" title="Game" backgroundImage="bg1" contentMode="scaleAspectFill" id="g2G-76-xpE" customClass="GameInterfaceController" customModule="TicTacToe_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="center" id="mEG-HU-AS6">
                             <items>
@@ -161,7 +184,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="786" y="345"/>
+            <point key="canvasLocation" x="975" y="345.5"/>
         </scene>
     </scenes>
 </document>
