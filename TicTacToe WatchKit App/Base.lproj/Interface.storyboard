@@ -76,6 +76,7 @@
                     <items>
                         <group width="1" alignment="center" id="mEG-HU-AS6">
                             <items>
+                                <group width="1" alignment="left" id="2k7-kr-nQq"/>
                                 <button width="42" alignment="left" id="V2O-Qc-hlc">
                                     <fontDescription key="font" type="system" pointSize="28"/>
                                     <connections>
@@ -98,6 +99,7 @@
                         </group>
                         <group width="1" alignment="center" id="UkN-rr-LJx">
                             <items>
+                                <group width="1" alignment="left" id="A8e-iL-zfa"/>
                                 <button width="42" alignment="left" id="pF3-Ot-P0l">
                                     <fontDescription key="font" type="system" pointSize="28"/>
                                     <connections>
@@ -120,6 +122,7 @@
                         </group>
                         <group width="1" alignment="center" id="FUS-Vh-wOP">
                             <items>
+                                <group width="1" alignment="left" id="toE-hB-5Xn"/>
                                 <button width="42" alignment="left" id="4Z9-Ix-qNN">
                                     <fontDescription key="font" type="system" pointSize="28"/>
                                     <connections>
@@ -152,6 +155,9 @@
                         <outlet property="b31" destination="4Z9-Ix-qNN" id="kwU-os-0bh"/>
                         <outlet property="b32" destination="dqp-yZ-J0m" id="Zem-ll-5mR"/>
                         <outlet property="b33" destination="knz-vb-x90" id="kuV-6I-qhO"/>
+                        <outlet property="firstRowSpacer" destination="2k7-kr-nQq" id="EdV-p7-z97"/>
+                        <outlet property="secondRowSpacer" destination="A8e-iL-zfa" id="uMX-mg-mix"/>
+                        <outlet property="thirdRowSpacer" destination="toE-hB-5Xn" id="rY0-je-j7a"/>
                     </connections>
                 </controller>
             </objects>

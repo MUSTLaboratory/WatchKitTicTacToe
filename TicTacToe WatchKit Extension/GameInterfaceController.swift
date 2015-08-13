@@ -22,7 +22,10 @@ class GameInterfaceController: WKInterfaceController {
     @IBOutlet var b31: WKInterfaceButton!;
     @IBOutlet var b32: WKInterfaceButton!;
     @IBOutlet var b33: WKInterfaceButton!;
-    
+
+    @IBOutlet var firstRowSpacer: WKInterfaceGroup!;
+    @IBOutlet var secondRowSpacer: WKInterfaceGroup!;
+    @IBOutlet var thirdRowSpacer: WKInterfaceGroup!;
     
     let board = Board(rows: 3, cols: 3);
     var buttons = [WKInterfaceButton]();
@@ -53,6 +56,22 @@ class GameInterfaceController: WKInterfaceController {
 
     override func willActivate() {
         super.willActivate()
+    }
+    
+    override func didAppear() {
+        super.didAppear();
+        
+        self.animateWithDuration(0.25) {
+            self.firstRowSpacer.setWidth(0);
+        }
+        
+        self.animateWithDuration(0.5) {
+            self.secondRowSpacer.setWidth(0);
+        }
+        
+        self.animateWithDuration(0.75) {
+            self.thirdRowSpacer.setWidth(0);
+        }
     }
 
     override func didDeactivate() {
